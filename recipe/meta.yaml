@@ -1,8 +1,8 @@
 {% set name = "jaraco.stream" %}
-{% set version = "1.1.2" %}
+{% set version = "1.2" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "1acfb4f7318e9a3d074836c3536a59b63df66e9674fa237c832e419815755046" %}
+{% set hash = "2b56514708224864d93b8a6e916c02ae7ae4ce822f05946704719bb294971a1b" %}
 {% set build = 0 %}
 
 package:
@@ -15,7 +15,7 @@ source:
   {{ hash_type }}: {{ hash }}
 
 build:
-  number: {{ build }}
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 
