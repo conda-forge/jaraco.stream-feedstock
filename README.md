@@ -14,9 +14,7 @@ Summary: Routines for dealing with data streams
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/jaraco.stream-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jaraco.stream-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/jaraco.stream-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/jaraco.stream-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/jaraco.stream-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/jaraco-stream-feedstock/branch/master)
+All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/jaraco.stream-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/jaraco.stream-feedstock)
 
 Current release info
 ====================
