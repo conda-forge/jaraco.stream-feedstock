@@ -1,8 +1,8 @@
 {% set name = "jaraco.stream" %}
-{% set version = "1.2" %}
+{% set version = "2.0" %}
 {% set compress_type = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "2b56514708224864d93b8a6e916c02ae7ae4ce822f05946704719bb294971a1b" %}
+{% set hash = "c2e9d507d8cf04a3ff916b57eaf46bacb8a9f8895b55ead853de9c47b8f5daa4" %}
 
 package:
   name: {{ name|lower }}
