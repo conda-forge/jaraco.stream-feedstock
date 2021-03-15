@@ -1,8 +1,7 @@
 {% set name = "jaraco.stream" %}
-{% set version = "2.0" %}
+{% set version = "3.0.2" %}
 {% set compress_type = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash = "c2e9d507d8cf04a3ff916b57eaf46bacb8a9f8895b55ead853de9c47b8f5daa4" %}
+{% set hash = "86c57fedffd4d5a4b18817f99ddf62ac8ed0a1bc31a1c41b9a88df9c6bb56e0b" %}
 
 package:
   name: {{ name|lower }}
@@ -11,16 +10,16 @@ package:
 source:
   fn: {{ name }}-{{ version }}.{{ compress_type }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ compress_type }}
-  {{ hash_type }}: {{ hash }}
+  sha256: {{ hash }}
 
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
 requirements:
-  build:
+  host:
     - python
     - pip
     - setuptools_scm >=1.15.0
@@ -38,8 +37,9 @@ about:
   home: https://github.com/jaraco/jaraco.stream
   # license_file: jaraco doesn't include license files - see https://github.com/jaraco/skeleton/issues/1
   license: MIT
+  license_file: LICENSE
   license_family: MIT
-  summary: 'Routines for dealing with data streams'
+  summary: Routines for dealing with data streams
   dev_url: https://github.com/jaraco/jaraco.stream
 
 extra:
