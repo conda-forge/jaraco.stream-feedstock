@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/jaraco/jaraco.stream
-  # license_file: jaraco doesn't include license files - see https://github.com/jaraco/skeleton/issues/1
+  license_file: LICENSE
   license: MIT
   license_family: MIT
   summary: 'Routines for dealing with data streams'
