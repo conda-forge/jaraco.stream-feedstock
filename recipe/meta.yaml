@@ -15,18 +15,18 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: python -m pip install --no-deps --ignore-installed .
 
 
 requirements:
   build:
-    - python
+    - python >=3.6
     - pip
     - setuptools_scm >=1.15.0
 
   run:
-    - python
+    - python >=3.6
     - six
 
 test:
@@ -45,3 +45,4 @@ about:
 extra:
   recipe-maintainers:
     - pmlandwehr
+    - jan-janssen
