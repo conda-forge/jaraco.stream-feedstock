@@ -1,5 +1,5 @@
 {% set name = "jaraco.stream" %}
-{% set version = "3.0.2" %}
+{% set version = "3.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 86c57fedffd4d5a4b18817f99ddf62ac8ed0a1bc31a1c41b9a88df9c6bb56e0b
+  sha256: 3af4b0441090ee65bd6dde930d29f93f50c4a2fe6048e2a9d288285f5e4dc441
 
 build:
   noarch: python
@@ -31,7 +31,7 @@ test:
     - jaraco.stream
   commands:
     - pip check
-  requires: 
+  requires:
     - pip
 
 about:
@@ -39,7 +39,7 @@ about:
   license_file: LICENSE
   license: MIT
   license_family: MIT
-  summary: 'Routines for dealing with data streams'
+  summary: Routines for dealing with data streams
   dev_url: https://github.com/jaraco/jaraco.stream
 
 extra:
