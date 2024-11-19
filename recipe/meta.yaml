@@ -1,13 +1,13 @@
 {% set name = "jaraco.stream" %}
-{% set version = "3.0.3" %}
+{% set version = "3.0.4" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3af4b0441090ee65bd6dde930d29f93f50c4a2fe6048e2a9d288285f5e4dc441
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/jaraco_stream-{{ version }}.tar.gz
+  sha256: e2bc5028e721ed2cc852b96ec9a33f2b7664e9b2dbf87eefbe617d126641934b
 
 build:
   noarch: python
