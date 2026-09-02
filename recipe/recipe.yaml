@@ -1,0 +1,51 @@
+schema_version: 1
+
+context:
+  name: jaraco.stream
+  version: 3.0.4
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/jaraco_stream-${{ version }}.tar.gz
+  sha256: e2bc5028e721ed2cc852b96ec9a33f2b7664e9b2dbf87eefbe617d126641934b
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools_scm >=1.15.0
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - six
+    - more-itertools
+
+tests:
+  - python:
+      imports:
+        - jaraco
+        - jaraco.stream
+      pip_check: true
+      python_version:
+        - ${{ python_min }}
+        - "*"
+
+about:
+  license_file: LICENSE
+  license: MIT
+  summary: Routines for dealing with data streams
+  homepage: https://github.com/jaraco/jaraco.stream
+  repository: https://github.com/jaraco/jaraco.stream
+
+extra:
+  recipe-maintainers:
+    - pmlandwehr
+    - jan-janssen
